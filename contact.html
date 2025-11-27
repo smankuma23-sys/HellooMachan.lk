@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card View</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7c7878;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        /* Card Container */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Individual Card Style */
+        .card {
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.47);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+.card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Card Image */
+        .card img {
+            width: 55px;
+            height: 55px;
+            object-fit: center;
+        }
+
+        /* Card Content */
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card-content p {
+            font-size: 1em;
+            margin-bottom: 15px;
+            color: #777;
+        }
+
+        /* Button Style */
+        .card-button {
+            display: inline-block;
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .card-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+        <center><img src="youtube.png" alt="Card Image"></center>
+            <div class="card-content">
+                <center><h3>Youtube</h3></center>
+<p>This is a my offcial youtube channel.</p>
+                <a href="https://www.youtube.com/@travelwithraji004" class="card-button">Read More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <center><img src="whatsapp.png" alt="Card Image"></center>
+            <div class="card-content">
+            <center><h3>WhatsApp</h3></center>
+                <p>This is my offcial whatapp group.</p>
+                <a href="https://chat.whatsapp.com/IzTY693yhdDC4dVeLx1OPK" class="card-button">Read More</a>
+            </div>
+        </div>
+
+        <div class="card">
+        <center><img src="telegram.png" alt="Card Image"></center>
+            <div class="card-content">
+            <center><h3>Telegram</h3></center>
+                <p>This is my offcial telegram channel.</p>
+                <a href="https://t.me/+_MQjt85PaSdjMzU1" class="card-button">Read More</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
